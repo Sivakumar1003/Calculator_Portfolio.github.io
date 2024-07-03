@@ -1,0 +1,125 @@
+/*================================
+    Variable and general style
+================================*/
+
+:root {
+    --frame-color: rgb(34, 142, 175);
+    --bg-color: #bec2c5;
+  }
+  
+  body {
+      background-color: #ffdfba;
+      font-size: 1.5em;
+  }
+  
+  /*================================
+              Frame
+  ================================*/
+  
+  #frame {
+    background-color: var(--bg-color);
+    width: 640px;
+    height: 390px;  
+    margin: auto;
+    margin-top: 60px;
+    border: 10px solid var(--frame-color);
+    border-radius: 15px;
+  }
+  
+  #top-frame {
+    width: 100.1%; /* add 0.1% because of white space on the left */
+    height: 31%;
+    border-bottom: 10px solid var(--frame-color);
+    /* offset left 0.1% because of white space on the left */
+    position: relative;
+    left: -0.1%;
+    /* Breaks the frame in two columns */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #bottom-frame {
+    height: 65%;
+  }
+  
+  /*================================
+          Top Frame content
+  ================================*/
+  
+  #display {
+    box-sizing: border-box;
+    height: 60px;
+    width: 280px;
+    padding: 10px;
+    border: 1 solid #b71717;
+    border-radius: 10px;
+    background-color: var(--frame-color);
+    /* position */
+    position: relative;
+    left: 10%;
+    top: 43%;
+  }
+  
+  #screen {
+    box-sizing: inherit;
+    height: 90%;
+    padding: 5px 10px;
+    margin-top: 2px;
+    background-color: #525c39;
+    /* content */
+    text-align: right; 
+  }
+  
+  #solar-panel {
+    height: 40px;
+    width: 170px;
+    background-color: #8f3a3a;
+    position: relative;
+    top: 60%;
+    left: 15%;
+  }
+  
+  
+  /*================================
+        Bottom Frame content
+  ================================*/
+  #button-container {
+    height: 85%;
+    width: 60%;
+    /* positioning the container */
+    position: relative;
+    top: 10%;
+    left: 35%;
+    /* Grid setting */
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+  }
+  
+  input[type=button]{
+    background-color: var(--bg-color);
+    color: var(--frame-color);
+    border: none;
+  }
+  
+  input[type=button]:focus{
+    outline: 0;
+  }
+  
+  /*================================
+              Footer
+  ================================*/
+  
+  #title {
+    font-family: 'Kalam', cursive;
+    position: relative;
+    top: 50px;
+    text-align: center;
+  }
+  
+  #footer {
+    font-family: 'Kalam', cursive;
+    position: relative;
+    top: 15px;
+    font-size: 0.8em;
+    text-align: center;
+  }

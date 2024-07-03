@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <div id="title">
+                <h1>Calculator</h1>
+        </div>
+        <div id="frame">
+            <div id="top-frame">
+            <div id="display">
+                <div id="screen">
+                    <div id="screen-content">0</div>
+                </div>
+            </div>
+            <div id="solar-panel">
+            </div>
+            </div>
+            <div id="bottom-frame">
+            <div id="button-container" class="container">
+                <!--    row1    -->
+                <input type="button" value="ON/C" onclick="handleclick(this.value)" />
+                <input type="button" value="7" onclick="handleclick(this.value)" />
+                <input type="button" value="8" onclick="handleclick(this.value)" />
+                <input type="button" value="9" onclick="handleclick(this.value)" />
+                <input type="button" value="&#247;" onclick="handleclick(this.value)" />
+                <input type="button" value="&#8730;" onclick="handleclick(this.value)" />
+                <!--    row2    -->
+                <input type="button" value="MRC" onclick="handleclick(this.value)" />
+                <input type="button" value="4" onclick="handleclick(this.value)" />
+                <input type="button" value="5" onclick="handleclick(this.value)" />
+                <input type="button" value="6" onclick="handleclick(this.value)" />
+                <input type="button" value="&#215;" onclick="handleclick(this.value)" />
+                <input type="button" value="&#37;" onclick="handleclick(this.value)" />
+                <!--    row3    -->
+                <input type="button" value="M-" onclick="handleclick(this.value)" />
+                <input type="button" value="1" onclick="handleclick(this.value)" />
+                <input type="button" value="2" onclick="handleclick(this.value)" />
+                <input type="button" value="3" onclick="handleclick(this.value)" />
+                <input type="button" value="&#45;" onclick="handleclick(this.value)" />
+                <input type="button" value="C" onclick="handleclick(this.value)" />
+                <!--    row4    -->
+                <input type="button" value="M+" onclick="handleclick(this.value)" />
+                <input type="button" value="0" onclick="handleclick(this.value)" />
+                <input type="button" value="." onclick="handleclick(this.value)" />
+                <input type="button" value="=" onclick="handleclick(this.value)" />
+                <input type="button" value="+" onclick="handleclick(this.value)" />
+                <input type="button" value="CE" onclick="handleclick(this.value)" />
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+<script src="script.js"></script>
+</html>
